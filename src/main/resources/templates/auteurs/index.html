@@ -13,7 +13,8 @@
 <div class="container">
     <h1 th:text="${title}">Un titre</h1>
     <hr>
-
+    <p><a th:href="@{/addPerson}" >Ajouter un  Auteur</a></p>
+    <hr>
     <div class="auteurs">
         <th:block th:each="auteur : ${auteurs}">
             <section>
